@@ -1,0 +1,73 @@
+.carros{
+  padding: 5rem 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 1rem;
+  box-sizing: border-box;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 10px 10px 2px rgba(0, 0, 0, 0.2);
+  border: 6px solid transparent;
+  border-radius: 5px;
+  background-color: #000000;
+}
+.card:hover {
+  border:6px solid #ffffff;
+}
+
+.card-img img{
+  width: 300px;
+}
+
+.card-description{
+  padding:2rem;
+}
+
+.card-description h2{
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: white;
+  font-family: Helvetica, sans-serif;
+}
+
+.card-description p{
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.card-description .price {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.card-botones {
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 1rem 2rem;
+}
+.card-botones button{
+  margin: 0 auto;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.modificar {
+  background-color: #3033d3;
+}
+
+.eliminar{
+  background-color: #ff0000;
+}
